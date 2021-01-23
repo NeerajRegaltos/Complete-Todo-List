@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Tiudo - Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container flex">
+
+
+
+        <h1 class="fbimage">Tiudo- Login</h1>
+
+        <%= locals.errorMessage %>
+
+            <form method="POST">
+
+
+                <input type="email" placeholder="email" name="email" required class="input"
+                    style="text-transform: lowercase;">
+
+                <input type="password" placeholder="Password" class="input" name="password" required>
+
+                <input type="submit" value="Log In" class="btn btn-primary input-button">
+
+
+            </form>
+
+            <p class="or">or</p>
+
+
+            <a href="/register" style="text-decoration: none; "><button type="button"
+                    class="btn btn-success button">Create New Account</button> </a>
+
+
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

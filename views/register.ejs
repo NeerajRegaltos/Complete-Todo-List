@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Tiudo - Register</title>
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body>
+    <div class="container flex">
+
+        <h1>Tiudo-Register</h1>
+
+        <p>
+            <%= locals.errorMessage %>
+        </p>
+        <form method="post">
+
+
+
+            <input type="email" placeholder="email" name="email" required class="input"
+                style="text-transform: lowercase;" value="<%=  locals.email %>">
+
+            <input type="password" placeholder="Password" class="input" name="password" required id="password">
+
+
+            <input type="password" placeholder="Confirm password" required id="confPassword" name="confPassword"
+                class="input">
+
+            <input type="submit" value="Register" class="btn btn-primary input-button">
+
+        </form>
+        <p class="or">or</p>
+
+
+        <a href="/login" style="text-decoration: none; "><button type="button" class="btn btn-success button">Already
+                have Account?</button> </a>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+<!-- <script>
+    const confPassword = document.getElementById("confPassword");
+    const password = document.getElementById("password");
+    if (password.value === confPassword.value) {
+        res.redirect("/login");
+    } else {
+        alert("Passwords Do not match.");
+        return;
+    }
+
+</script> -->
